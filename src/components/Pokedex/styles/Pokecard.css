@@ -1,0 +1,267 @@
+.pokecard {
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+  border-radius: 0.8em;
+  border: 0.5em solid currentColor;
+  cursor: pointer;
+  transition: trasnform 100ms ease;
+}
+.pokecard:hover {
+  transform: scale(1.05);
+}
+.pokecard_header {
+  aspect-ratio: 2;
+  position: relative;
+  background-color: currentColor;
+}
+.pokecard_img {
+  position: absolute;
+  width: 60%;
+  bottom: -3em;
+  left: 50%;
+  transform: translate(-50%);
+}
+.pokecard_body {
+  padding-top: 3em;
+}
+.pokecard_name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+.pokecard_types {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  color: black;
+}
+.pokecard_types-item {
+  text-transform: capitalize;
+  position: relative;
+}
+.pokecard_types-item::before {
+  content: "/";
+  position: absolute;
+  left: -1.2em;
+}
+.pokecard_types-item:first-child::before {
+  content: "";
+}
+.pokecard_stats {
+  padding: 0.5em 0.5em 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1em 0.2em;
+}
+.pokecard__stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokecard__stats-label {
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: black;
+}
+.pokecard__stats-value {
+  font-size: 1.1rem;
+}
+.fire {
+  color: #e6901e;
+}
+.water {
+  color: #1479fb;
+}
+.bug {
+  color: #4ab648;
+}
+.grass {
+  color: #b1dbbc;
+}
+.normal {
+  color: #735259;
+}
+.fighting {
+  color: #96402a;
+}
+.flying {
+  color: rgb(131, 102, 158);
+}
+.poison {
+  color: #5b3184;
+}
+.ground {
+  color: #654008;
+}
+.rock {
+  color: #7e7e7e;
+}
+.ghost {
+  color: #323569;
+}
+.steel {
+  color: #5e736c;
+}
+.electric {
+  color: #0c1395;
+}
+.psychic {
+  color: #e629b6;
+}
+.ice {
+  color: #8cc8e4;
+}
+.dragon {
+  color: #478a93;
+}
+.dark {
+  color: #0b0e0d;
+}
+.fairy {
+  color: #eb8dcf;
+}
+
+.bg-normal {
+  background: linear-gradient(
+    181.51deg,
+    #735259 -6.44%,
+    #bc6b7c 121.95%,
+    #7c3f4c 186.11%
+  );
+}
+.bg-fighting {
+  background: linear-gradient(
+    176.83deg,
+    #96402a -8.78%,
+    #f1613c 169.09%,
+    #cb735d 242.33%
+  );
+}
+.bg-flying {
+  color: rgb(131, 102, 158);
+}
+.bg-poison {
+  background: linear-gradient(
+    177.03deg,
+    #5b3184 -11.97%,
+    #a564e3 71.28%,
+    #ce9bff 135.64%
+  );
+}
+.bg-ground {
+  background: linear-gradient(
+    179.75deg,
+    #654008 -19.96%,
+    #895c1a 43.67%,
+    #d69638 138.4%
+  );
+}
+.bg-rock {
+  background: linear-gradient(
+    177.03deg,
+    #7e7e7e -11.97%,
+    #8d8d94 57.49%,
+    #d3d3d3 135.64%
+  );
+}
+.bg-bug {
+  background: linear-gradient(
+    177.56deg,
+    #62db60 -58.92%,
+    #3bb039 16.57%,
+    #aaffa8 209.53%
+  );
+}
+.bg-ghost {
+  background: linear-gradient(
+    177.03deg,
+    #323569 -11.97%,
+    #454aa8 57.49%,
+    #787dda 135.64%
+  );
+}
+.bg-steel {
+  background: linear-gradient(
+    179.75deg,
+    #5e736c -19.96%,
+    #728881 43.67%,
+    #a8a8a8 138.4%
+  );
+}
+.bg-fire {
+  background: linear-gradient(
+    176.37deg,
+    #f96d6f -32.26%,
+    #e35825 22.55%,
+    #e8ae1b 125.72%
+  );
+}
+.bg-water {
+  background: linear-gradient(
+    179.57deg,
+    #133258 -70.14%,
+    #1479fb 56.16%,
+    #82b2f1 214.85%
+  );
+}
+.bg-grass {
+  background: linear-gradient(
+    178.92deg,
+    #7ec6c5 0.92%,
+    #abdac6 47.96%,
+    #cae099 99.08%
+  );
+}
+.bg-electric {
+  background: linear-gradient(
+    179.75deg,
+    #0c1395 -19.96%,
+    #2b319b 43.67%,
+    #7075d9 138.4%
+  );
+}
+.bg-psychic {
+  background: rgb(226, 55, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(226, 55, 255, 1) 0%,
+    rgba(235, 84, 203, 1) 30%,
+    rgba(158, 0, 205, 1) 100%
+  );
+}
+.bg-ice {
+  background: linear-gradient(
+    177.03deg,
+    #6fbedf -11.97%,
+    #64cbf5 47.77%,
+    #bdebfe 136.72%
+  );
+}
+.bg-dragon {
+  background: linear-gradient(
+    179.75deg,
+    #478a93 -19.96%,
+    #56a4ae 43.67%,
+    #a2bec1 138.4%
+  );
+}
+.bg-dark {
+  background: linear-gradient(
+    177.03deg,
+    #030706 -11.97%,
+    #0d1211 57.49%,
+    #5a5e5d 135.64%
+  );
+}
+.bg-fairy {
+  background: rgb(226, 55, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(226, 55, 255, 1) 0%,
+    rgba(235, 84, 203, 1) 30%,
+    rgba(175, 8, 107, 1) 67%
+  );
+}
